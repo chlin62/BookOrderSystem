@@ -1,0 +1,8 @@
+c:\users\chenghanlin\documents\visual studio 2010\Projects\FinalProject\FinalProject\bin\FinalProject.dll
+c:\users\chenghanlin\documents\visual studio 2010\Projects\FinalProject\FinalProject\bin\FinalProject.pdb
+c:\users\chenghanlin\documents\visual studio 2010\Projects\FinalProject\FinalProject\obj\Debug\FinalProject.dll
+c:\users\chenghanlin\documents\visual studio 2010\Projects\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
+C:\Users\chlin\Desktop\FinalProject\FinalProject\bin\FinalProject.dll
+C:\Users\chlin\Desktop\FinalProject\FinalProject\bin\FinalProject.pdb
+C:\Users\chlin\Desktop\FinalProject\FinalProject\obj\Debug\FinalProject.dll
+C:\Users\chlin\Desktop\FinalProject\FinalProject\obj\Debug\FinalProject.pdb

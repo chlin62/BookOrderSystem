@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/style.min.css" />
+		<link rel="stylesheet" href="themes/jqm-style.css">
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+	
+	</head>
+	<body>
+		<div data-role="page" data-theme="a" class="jqm-demos ">
+			<div data-role="header" class="jqm-header" data-position="inline">
+				<h2><a href = "index.php"><img src="images/logo.png"   /></a></h2>  
+				<p>CLOUDMOBILER R&D BASE</p>
+			</div><!-- end header-->
+			<div data-role="main"  class="ui-content jqm-content">
+				  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                   </asp:ContentPlaceHolder>
+			</div>
+			<div data-role="footer" data-position="fixed" data-tap-toggle="true" class="jqm-footer" >
+					<p>行雲者研發基地,2014</p>
+			</div><!-- /footer --> 
+			
+			<div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" id="panel"><!--右方選單 panel-->
+				<ul data-role="listview">
+					<li data-icon="home"><a href="main.php" target="ifm" >HOME</a></li>
+                    <li data-icon="home"><a href="main.php" target="ifm" >課程管理</a></li>
+					<li data-icon="carat-r"><a href="#" target="_self">購物車</a></li>
+					<li data-icon="carat-r"><a href="#" target="_self">我的訂單</a></li>
+					<li data-icon="carat-r"><a href="#" target="_self">帳號管理</a></li>
+                    <li data-role="collapsible" data-inset="false" data-iconpos="right">
+					  <h3>管理功能區</h3>
+					  <ul data-role="listview">
+						<li><a href="http://www.pu.edu.tw">課程管理</a></li>
+						<li><a href="#" target="ifm">新增書籍</a></li>
+						<li><a href="#" target="ifm">課程狀態管理</a></li>
+						<li><a href="#" target="ifm">訂單列表</a></li>
+                        <li><a href="#" target="ifm">成員清單</a></li>
+					  </ul>
+                     <li data-role="list-divider"></li>
+					<li data-icon="back"><a href="index.php" target="_self">登出</a></li>
+					</li><!-- /collapsible -->
+				</ul>
+
+			</div><!-- /panel -->
+		
+		</div><!--end page-->
+		
+	</body>
+
+</html>
