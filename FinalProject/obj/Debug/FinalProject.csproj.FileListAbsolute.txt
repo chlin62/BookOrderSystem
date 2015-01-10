@@ -6,3 +6,4 @@ C:\Users\chlin\Desktop\FinalProject\FinalProject\bin\FinalProject.dll
 C:\Users\chlin\Desktop\FinalProject\FinalProject\bin\FinalProject.pdb
 C:\Users\chlin\Desktop\FinalProject\FinalProject\obj\Debug\FinalProject.dll
 C:\Users\chlin\Desktop\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
+C:\Users\chlin\Desktop\FinalProject\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache

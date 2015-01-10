@@ -55,7 +55,19 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Content Include="book_manage.aspx" />
+    <Content Include="book_update_manage.aspx" />
+    <Content Include="class_list.aspx" />
+    <Content Include="class_manage.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\linkdet_150_8495641_34376.jpg" />
     <Content Include="images\logo.png" />
+    <Content Include="login.aspx" />
+    <Content Include="myAct_manage.aspx" />
+    <Content Include="myOrder_list.aspx" />
+    <Content Include="order_manager.aspx" />
     <Content Include="test.aspx" />
     <Content Include="themes\images\ajax-loader.gif" />
     <Content Include="themes\images\icons-png\action-black.png" />
@@ -162,7 +174,9 @@
     <Content Include="themes\jquery.mobile.icons.min.css" />
     <Content Include="themes\style.css" />
     <Content Include="themes\style.min.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -173,6 +187,70 @@
     <Content Include="zerogrid.css" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="book_manage.aspx.cs">
+      <DependentUpon>book_manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="book_manage.aspx.designer.cs">
+      <DependentUpon>book_manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="book_update_manage.aspx.cs">
+      <DependentUpon>book_update_manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="book_update_manage.aspx.designer.cs">
+      <DependentUpon>book_update_manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="class_list.aspx.cs">
+      <DependentUpon>class_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="class_list.aspx.designer.cs">
+      <DependentUpon>class_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="class_manage.aspx.cs">
+      <DependentUpon>class_manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="class_manage.aspx.designer.cs">
+      <DependentUpon>class_manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs" />
+    <Compile Include="myAct_manage.aspx.cs">
+      <DependentUpon>myAct_manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myAct_manage.aspx.designer.cs">
+      <DependentUpon>myAct_manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myOrder_list.aspx.cs">
+      <DependentUpon>myOrder_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myOrder_list.aspx.designer.cs">
+      <DependentUpon>myOrder_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order_manager.aspx.cs">
+      <DependentUpon>order_manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order_manager.aspx.designer.cs">
+      <DependentUpon>order_manager.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainMaster.Master.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
@@ -181,6 +259,7 @@
     <Compile Include="MainMaster.Master.designer.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="SessionClasscs.cs" />
     <Compile Include="Site2.Master.cs">
       <DependentUpon>Site2.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -216,7 +295,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>55437</DevelopmentServerPort>
+          <DevelopmentServerPort>50587</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
