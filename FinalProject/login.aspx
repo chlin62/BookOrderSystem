@@ -47,9 +47,9 @@
         <asp:Panel ID="Panel1" runat="server">
             <div class="alert alert-danger"  role="alert">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidatorAct" runat="server" 
-                    ErrorMessage="帳號忘記填了" ControlToValidate="TextBoxAct"></asp:RequiredFieldValidator>
+                    ErrorMessage="帳號忘記填了" ControlToValidate="TextBoxAct" Display="Dynamic"></asp:RequiredFieldValidator>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidatorPwd" runat="server" 
-                    ErrorMessage="密碼忘記填了" ControlToValidate="TextBoxPwd"></asp:RequiredFieldValidator>
+                    ErrorMessage="密碼忘記填了" ControlToValidate="TextBoxPwd" Display="Dynamic"></asp:RequiredFieldValidator>
                 <asp:Literal ID="LiteralError" runat="server"></asp:Literal>
             </div>
         </asp:Panel>

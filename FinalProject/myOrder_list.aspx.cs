@@ -32,7 +32,7 @@ namespace FinalProject
                 tcPrice.Text = dt[i]["B_PRICE"].ToString();
                 SqlDataSource SqlDataSourceSelectBook = new SqlDataSource(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ConnectionString"].ToString(), "SELECT [B_STATE] FROM [BOOK] WHERE [B_ID] = " + dt[0]["B_ID"]);
                 DataView dtBook = (DataView)SqlDataSourceSelectBook.Select(new DataSourceSelectArguments());
-                if (Convert.ToBoolean(dtBook[0]["B_STATE"]) == false)
+                if (Convert.ToBoolean(dtBook[i]["B_STATE"]) == false)
                     tcDel.Text = "<a href='myOrder_list.aspx?STU_NUM=" + Session["user"] + "&B_ID=" + dt[i]["B_ID"] + "'>刪除</a>";
                 else
                     tcDel.Text = "結單";
