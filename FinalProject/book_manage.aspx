@@ -19,7 +19,7 @@
                 <Columns>
                     <asp:HyperLinkField DataNavigateUrlFields="B_ID,CLS_NUM" 
                         DataNavigateUrlFormatString="book_update_manage.aspx?book={0}&amp;class={1}" 
-                        DataTextField="B_NAME" HeaderText="書籍名稱" />
+                        DataTextField="B_NAME" HeaderText="書籍名稱" Target="_self" />
                     <asp:BoundField DataField="B_PRICE" HeaderText="書籍價格" 
                         SortExpression="B_PRICE" />
                 </Columns>

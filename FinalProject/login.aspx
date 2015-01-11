@@ -39,7 +39,7 @@
     
        
       帳號:<asp:TextBox ID="TextBoxAct" class="form-control" runat="server"></asp:TextBox>
-      密碼:<asp:TextBox ID="TextBoxPwd" class="form-control" runat="server"></asp:TextBox>  
+      密碼:<asp:TextBox ID="TextBoxPwd" class="form-control" runat="server" TextMode="Password"></asp:TextBox>  
         
       <asp:Button ID="Button1" class="btn btn-lg btn-primary btn-block" runat="server" 
             Text="登入" onclick="Button1_Click" />

@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<form runat=server action="~/book_update_manage.aspx" target="_self">
+<form runat=server >
 <div align = "center">
 <h1>編輯書籍</h1>
 <asp:Panel ID="Panel2" runat="server">

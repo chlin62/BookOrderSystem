@@ -38,11 +38,11 @@
         帳號:
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
-        輸入舊密碼:<asp:TextBox ID="TextBoxOldPwd" runat="server"></asp:TextBox>
+        輸入舊密碼:<asp:TextBox ID="TextBoxOldPwd" runat="server" TextMode="Password"></asp:TextBox>
         <br />
-        輸入新密碼:<asp:TextBox ID="TextBoxNewPwd" runat="server"></asp:TextBox>
+        輸入新密碼:<asp:TextBox ID="TextBoxNewPwd" runat="server" TextMode="Password"></asp:TextBox>
         <br />
-        再輸入一次新密碼:<asp:TextBox ID="TextBoxNewPwdAgain" runat="server"></asp:TextBox>
+        再輸入一次新密碼:<asp:TextBox ID="TextBoxNewPwdAgain" runat="server" TextMode="Password"></asp:TextBox>
         <br />
         <div align="center">
         <asp:Button ID="Button1" class="ui-btn" runat="server" Text="送出" 
