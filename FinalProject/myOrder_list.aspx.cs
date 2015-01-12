@@ -30,17 +30,20 @@ namespace FinalProject
                 TableCell tcDel = new TableCell();
                 tcName.Text = dt[i]["B_NAME"].ToString();
                 tcPrice.Text = dt[i]["B_PRICE"].ToString();
-                SqlDataSource SqlDataSourceSelectBook = new SqlDataSource(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ConnectionString"].ToString(), "SELECT [B_STATE] FROM [BOOK] WHERE [B_ID] = " + dt[0]["B_ID"]);
+                SqlDataSource SqlDataSourceSelectBook = new SqlDataSource(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ConnectionString"].ToString(), "SELECT [B_STATE] FROM [BOOK] WHERE [B_ID] = " + dt[i]["B_ID"]);
                 DataView dtBook = (DataView)SqlDataSourceSelectBook.Select(new DataSourceSelectArguments());
-                if (Convert.ToBoolean(dtBook[i]["B_STATE"]) == false)
-                    tcDel.Text = "<a href='myOrder_list.aspx?STU_NUM=" + Session["user"] + "&B_ID=" + dt[i]["B_ID"] + "'>刪除</a>";
-                else
-                    tcDel.Text = "結單";
-                tr.Cells.Add(tcName);
-                tr.Cells.Add(tcPrice);
-                tr.Cells.Add(tcDel);
-                Table1.Rows.Add(tr);
-                sumPrice += Convert.ToInt32(tcPrice.Text);
+                if (dtBook.Count >=0 )
+                {
+                    if (Convert.ToBoolean(dtBook[0]["B_STATE"]) == false)
+                        tcDel.Text = "<a href='myOrder_list.aspx?STU_NUM=" + Session["user"] + "&B_ID=" + dt[i]["B_ID"] + "'>刪除</a>";
+                    else
+                        tcDel.Text = "結單";
+                }
+                    tr.Cells.Add(tcName);
+                    tr.Cells.Add(tcPrice);
+                    tr.Cells.Add(tcDel);
+                    Table1.Rows.Add(tr);
+                    sumPrice += Convert.ToInt32(tcPrice.Text);
             }
 
             LabelPrice.Text = "您本學期書錢共為:"+sumPrice;
