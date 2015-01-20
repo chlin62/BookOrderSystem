@@ -58,7 +58,7 @@ namespace FinalProject
                     LiteralClassName.Text = dt[0]["CLS_NAME"].ToString();
                     LiteralClassTeacher.Text = dt[0]["CLS_TEACHER"].ToString();
                     string bookcontent = "<br/>";
-                    Image1.ImageUrl = "\\images\\" + dt[0]["B_IMG"] + ".jpg";
+                    Image1.ImageUrl = "/images/" + dt[0]["B_IMG"] + ".jpg";
                     bookcontent += "書籍名稱: " + dt[0]["B_NAME"] + "</br>";
                     bookcontent += "書籍作者: " + dt[0]["B_AUTHOR"] + "</br>";
                     bookcontent += "書籍價格: " + dt[0]["B_PRICE"] + "</br>";
