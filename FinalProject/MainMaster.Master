@@ -26,7 +26,7 @@
                    </asp:ContentPlaceHolder>
 			</div>
 			<div data-role="footer" data-position="fixed" data-tap-toggle="true" class="jqm-footer" >
-					<p>行雲者研發基地,2014</p>
+					<p>103上軟體設計與開發 期末小專題 410125652林承翰 410125238吳霈俞</p>
 			</div><!-- /footer --> 
 			
 			<div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" id="panel"><!--右方選單 panel-->
